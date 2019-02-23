@@ -1,0 +1,40 @@
+<div class="login">
+    <h1 style="color:black"> Please login or register as new user </h1>
+    <div class="login-login-register">
+        <div class="login-container">
+            <h2 style = "color:white"> Login </h2>
+            <form ng-submit="login.submit(form1.$valid)" class="cs142-login-information" name="form1" novalidate = "">
+                <input ng-model="login.loginName" name="loginName" placeholder="Username" class="login-item"/>
+
+                <input ng-model="login.password" name = "password" placeholder="Password" class="login-item"
+                       ng-maxlength="20" ng-minlength="6" type="password" name="name"/>
+
+                <button class="login-item">Login</button>
+            </form>
+            <button class="login-item" ng-click="login.reset()" >Reset</button>
+            <div class="login-error"> {{login.errorMessage}} </div>
+        </div>
+
+        <br>
+
+		<br>
+
+		<div class = "login-container">
+			<h2 style = "color:white"> New User </h2>
+			<form ng-submit = "register.newUser(form2.$valid)" name = "form2">
+				<input ng-model = "register.userName" name = "userName" placeholder = "username" class = "register-item"/>
+				<input ng-model = "register.lastName" name = "lastName" placeholder = "last name" class = "register-item"/>
+				<input ng-model = "register.firstName" name = "firstName" placeholder = "first name" class = "register-item"/>
+				<input ng-model = "register.password1" name = "password1" placeholder = "password" class = "register-item" ng-minlength = "6"/>
+				<input ng-model = "register.password2" name = "password2" placeholder = "repeat password" class = "register-item" ng-minlength = "6"/>
+				<input ng-model = "register.location" name = "location" placeholder = "location" class = "register-item"/>
+				<input ng-model = "register.occupation" name = "occupation" placeholder = "occupation" class = "register-item"/>
+				<input ng-model = "register.description" name = "description" placeholder = "description" class = "register-item"/>
+				<button class = "register-item">Register</button>
+			</form>
+			<button ng-click = "register.reset()"> Reset </button>
+			<div class = "login-error">{{register.errorMessage}}</div>
+		</div>
+
+	</div>
+</div>

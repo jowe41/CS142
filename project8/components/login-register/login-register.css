@@ -1,0 +1,39 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-login-register{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 500px;
+    background-color: blue;
+    border-radius:10px;
+}
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.login-item{
+    margin: 10px 0;
+}
+
+.register-item{
+    margin: 10px 0;
+}
+
+.login-error{
+	color: red;
+}
+
+button{
+	align-self: baseline;
+}
+

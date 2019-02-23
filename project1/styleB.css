@@ -1,0 +1,48 @@
+#A,#B,#C,#D,#E,#F{
+	width: 100px;
+	height: 150px;
+	font-size:40px;
+	font-family: Tahoma;
+	border-left-style:dotted;
+	border-left-width: 10px;
+	border-left-color: #D0D0FF;
+	padding-left: 10px;
+	background-color: #eeeff2;
+}
+
+#F{
+	position:absolute;
+	right: 0;
+	bottom: 0;
+}
+
+#A{position:absolute;
+	top:0;
+	left:10px;
+}
+
+#B{position:absolute;
+	top:0;
+	left:140px;
+}
+
+#C{position:absolute;
+	top:0;
+	left:270px;
+}
+
+#D{position:absolute;
+	top:0;
+	left:400px;
+}
+
+#E{position:absolute;
+	top:0;
+	left:530px;
+}
+#A:hover {background: yellow;cursor: pointer;color: goldenrod;}
+#B:hover {background: yellow;cursor: pointer;color: goldenrod}
+#C:hover {background: yellow;cursor: pointer;color: goldenrod;}
+#D:hover {background: yellow;cursor: pointer;color: goldenrod;}
+#E:hover {background: yellow;cursor: pointer;color: goldenrod;}
+#F:hover {background: yellow;cursor: pointer;color: goldenrod;}

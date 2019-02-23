@@ -1,0 +1,14 @@
+.header{
+	text-align: right;
+}
+
+
+.motto-update{
+	text-align: left;
+	box-shadow: black;
+}/*
+CSS for the CS142 project #4 main page
+
+Since CSS uses a global name space for classes we should use class names starting with
+cs142-main- here.
+*/

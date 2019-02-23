@@ -1,0 +1,41 @@
+#A,#C,#E{
+	width: 100px;
+	height: 100px;
+	font-size:40px;
+	font-family: Tahoma;
+	border-top-style:solid;
+	border-top-width: 1px;
+	border-top-color: #687291;
+	text-align:center;
+	background-color: #dfe1e7;
+	position:relative;
+	margin:auto auto 1% auto;
+}
+#B,#D{
+	width: 100px;
+	height: 100px;
+	font-size:40px;
+	font-family: Tahoma;
+	border-top-style:solid;
+	border-top-width: 1px;
+	border-top-color: #687291;
+	text-align:center;
+	background-color: #eeeff2;
+	position:relative;
+	margin:auto auto 1% auto;
+}
+
+#F{
+	width: 100px;
+	height: 100px;
+	font-size:40px;
+	font-family: Tahoma;
+	border-style:solid;
+	border-width: 4px;
+	border-color: : black;
+	text-align:center;
+	line-height: 100px;
+	background-color: #687291;
+	position:relative;
+	margin: 0 auto;
+}

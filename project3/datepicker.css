@@ -1,0 +1,12 @@
+#OtherMonth{
+	background: red;
+}
+
+#CurMonth{
+	background: yellow;
+	cursor: pointer;
+}
+
+#LeftArrow,#RightArrow{
+	cursor: pointer;
+}

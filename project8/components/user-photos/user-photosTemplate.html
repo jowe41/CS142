@@ -1,0 +1,26 @@
+<div ng-repeat="photo in userPhotos.photos">
+	<div> {{photo.date_time}} </div>
+	<img ng-src="{{'images/' + photo.file_name}}" class="photos">
+	<button ng-click = 'userPhotos.likePhoto(photo)'>Like</button>
+	<div> Numbers of like: {{photo.like.length}}</div>
+	<button ng-if = 'userPhotos.hasAuthorityToPhoto(photo)' ng-click = 'userPhotos.deletePhoto(photo)'>
+		Delete Photo
+	</button>
+	<div ng-repeat="comment in photo.comments">
+		<a ng-herf='#!users/{{comment.user._id}}'>
+			{{comment.user.first_name}} {{comment.user.last_name}}
+		</a>
+		<div>{{comment.date_time}}</div>
+		<div>{{comment.comment}}</div>
+		<button ng-if = 'userPhotos.hasAuthorityToComment(comment)' ng-click = 'userPhotos.deleteComment(photo, comment)'>
+			Delete comment
+		</button>
+	</div>
+	<div class ="addComment">
+		<form ng-submit="userPhotos.addComment(photo)">
+			<textarea ng-model="userPhotos.comments[photo._id]" placeholder="comment"></textarea>
+			<input type = 'submit' value = 'Submit' />
+		</form>
+	</div>
+	
+</div>

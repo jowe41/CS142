@@ -1,0 +1,27 @@
+/*
+CSS for the CS142 project #5 main page
+
+Since CSS uses a global name space for classes we should use class names starting with
+cs142-main- here.
+*/
+.toolbar-left{
+    font-family: "Times New Roman";
+    font-size: 24px;
+    position: relative;
+}
+
+.version {
+	font-family: "Times New Roman";
+	font-size: 18px;
+	position: absolute;
+	bottom: 0px;
+}
+
+.information {
+	font-family: "Times New Roman";
+	font-size: 24px;
+	padding: 15px;
+}
+
+
+

@@ -1,0 +1,17 @@
+<div>
+	{{userDetail.user.description}}
+</div>
+
+<div><a ng-href="#!photos/{{userDetail.user._id}}">Photos</a></div>
+<md-button ng-show="userDetail.hasAuthority()" ng-click="userDetail.deleteUser()" >
+    Delete Account
+</md-button>
+<div ng-show='userDetail.mostRecentlyPhoto !== undefined'>
+	<div> Most recently uploaded photo: </div>
+	<img src = '/images/{{userDetail.mostRecentlyPhoto.file_name}}' class = "photo" ng-click = 'userDetail.showDetail(userDetail.mostRecentlyPhoto)'>
+	<div> {{userDetail.mostRecentlyPhoto.date_time}}</div>
+</div>
+<div ng-show = 'userDetail.mostCommentedPhoto !== undefied'>
+	<div> Most comment photo: </div>
+	<img src = '/images/{{userDetail.mostCommentedPhoto.file_name}}' class = 'photo' ng-click = 'userDetail.showDetail(userDetail.mostCommentedPhoto)'>
+	<div> {{userDetail.mostCommentedPhoto.comments.length}} </div>

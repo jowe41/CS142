@@ -1,0 +1,6 @@
+<div>
+	<span>Find your favourite state:<input type="text" ng-model="subString"></span>
+<li class="state" ng-repeat="state in statesModel | myfilter:subString">
+	<span>{{state}}</span>
+</li>
+</div>
